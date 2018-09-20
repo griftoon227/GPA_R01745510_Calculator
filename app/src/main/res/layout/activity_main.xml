@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/grade1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade_1" />
+
+        <EditText
+            android:id="@+id/grade1ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_grade_1" />
+
+        <TextView
+            android:id="@+id/grade2TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade_2" />
+
+        <EditText
+            android:id="@+id/grade2ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_grade_2" />
+
+        <TextView
+            android:id="@+id/grade3TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade_3" />
+
+        <EditText
+            android:id="@+id/grade3ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_grade_3" />
+
+        <TextView
+            android:id="@+id/grade4TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade_4" />
+
+        <EditText
+            android:id="@+id/grade4ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_grade_4" />
+
+        <TextView
+            android:id="@+id/grade5TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grade_5" />
+
+        <EditText
+            android:id="@+id/grade5ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_grade_5" />
+
+        <Button
+            android:id="@+id/btn_compute_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_text_compute_gpa"
+            android:onClick="compute_gpa" />
+
+        <TextView
+            android:id="@+id/show_computed_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_gpa" />
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
